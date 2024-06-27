@@ -73,7 +73,7 @@ function error() {
 }
 
 function getWeather(lat, lon) {
-    const apiKey = 'f4cda2d65f3541bcb9f153105242706'; // WeatherAPI key
+    const apiKey = 'f4cda2d65f3541bcb9f153105242706'; 
     const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${lat},${lon}`;
 
     fetch(url)
@@ -105,7 +105,7 @@ function provideTips(data) {
     let tips = '';
 
     if (temp < 0) {
-        tips = 'It\'s freezing! Make sure to bundle up warmly.(coffee dosent sound bad)';
+        tips = 'It\'s freezing! Make sure to bundle up warmly.(coffee dosent sounds bad)';
     } else if (temp < 10) {
         tips = 'It\'s quite cold. Wear a coat and stay warm.';
     } else if (temp < 20) {

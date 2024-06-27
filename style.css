@@ -1,0 +1,173 @@
+
+*{
+    margin:0;
+    padding:0;
+    font-size: 'Pooping',sans-serif;
+    box-sizing: border-box;
+}
+body{
+   cursor: none;
+}
+.cursor{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #7f7ea8;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+}
+.cursor::after{
+    content: "";
+    width:20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid #BBE9FF;
+    border-radius: 50%;
+    opacity: .5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim2 .5s infinite alternate;
+}
+@keyframes cursorAnim{
+    from{
+        transform: scale(1);
+    }to{
+        transform: scale(.7);
+    }
+}
+@keyframes cursorAnim2{
+    from{
+        transform: scale(1);
+    }to{
+        transform: scale(.4);
+    }
+}
+@keyframes cursorAnim3{
+    0%{
+        transform: scale(1);
+    }50%{
+        transform: scale(3);
+    }100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+.expand{
+    animation: cursorAnim3 .5s forwards;
+    border:1px solid red;
+}
+
+.noteSec {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #B1AFFF, #BBE9FF);
+    color: #052229;
+    padding-top: 4%;
+    padding-left: 8%;
+    
+   
+}
+
+.noteSec h1{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+
+.noteSec h1 img{
+    width: 100px;
+}
+
+
+.noteSec button{
+    display:flex;
+    align-items: center;
+    background: linear-gradient(90deg,  #BBE9FF,#B1AFFF);
+    color:#052229 ;
+    font-size: 18px;
+    padding: 8px 8px;
+    border: 0;
+    border-radius: 40px;
+    margin: 10px 0 40px 60px;
+    
+}
+.input{
+    position: relative;
+    width:100%;
+    max-width: 500px;
+    min-height: 150px;
+    background:#7ed0ec ;
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.input img{
+    width: 25px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    
+}
+
+.container {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+    background:#B1AFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #ae6195;
+}
+
+#weather {
+    margin-bottom: 20px;
+}
+
+#weather h2 {
+    margin: 0;
+    font-size: 2em;
+    color: #ecf0f1;
+}
+
+#weather p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #ecf0f1;
+}
+
+#weather img {
+    width: 64px;
+    height: 64px;
+}
+
+#tips {
+    margin-top: 20px;
+    margin-left: 25%;
+    font-size: 2em;
+    font-weight: bold;
+    color: #FDFFE2;
+    text-align: center;
+    max-width:450px ;
+}
+.welcome{
+    margin-left: 27%;
+    max-width: 400px;
+    color: #ae6195;
+    font-weight: bold;
+}
